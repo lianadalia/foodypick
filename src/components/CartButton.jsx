@@ -18,7 +18,7 @@ export default function CartButton() {
           {cartCount}
         </span>
         <span className="font-semibold text-base">View Cart</span>
-        <span className="font-semibold text-base">£{subtotal.toFixed(2)}</span>
+        <span className="font-semibold text-base">€{subtotal.toFixed(2)}</span>
       </button>
     </div>
   );

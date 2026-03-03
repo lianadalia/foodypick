@@ -78,12 +78,12 @@ export default function Restaurant() {
           </div>
           <div className="flex items-center gap-1 text-sm text-gray-500">
             <ShoppingBag size={14} />
-            <span>{restaurant.deliveryFee === 0 ? 'Free delivery' : `£${restaurant.deliveryFee.toFixed(2)} delivery`}</span>
+            <span>{restaurant.deliveryFee === 0 ? 'Free delivery' : `€${restaurant.deliveryFee.toFixed(2)} delivery`}</span>
           </div>
         </div>
 
         <div className="flex gap-2 mt-2">
-          <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">Min. order £{restaurant.minOrder}</span>
+          <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">Min. order €{restaurant.minOrder}</span>
           <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">~{restaurant.serviceFeePct}% service fee</span>
           <span className="text-xs text-green-600 bg-green-50 px-2 py-1 rounded-full font-medium">Open · closes 11 PM</span>
         </div>

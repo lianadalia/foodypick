@@ -125,7 +125,7 @@ export const restaurants = [
               { id: 'protein', name: 'Protein', required: false, options: [
                 { id: 'none', label: 'No protein', price: 0 },
                 { id: 'tofu', label: 'Tofu', price: 0 },
-                { id: 'chicken', label: 'Chicken +£1', price: 1 },
+                { id: 'chicken', label: 'Chicken +€1', price: 1 },
               ]},
             ],
           },
@@ -337,9 +337,9 @@ export const restaurants = [
             available: true,
             modifiers: [
               { id: 'extras', name: 'Add extras', required: false, options: [
-                { id: 'bacon', label: 'Smoked bacon +£1.50', price: 1.5 },
-                { id: 'egg', label: 'Fried egg +£1', price: 1 },
-                { id: 'jalapeno', label: 'Jalapeños +£0.50', price: 0.5 },
+                { id: 'bacon', label: 'Smoked bacon +€1.50', price: 1.5 },
+                { id: 'egg', label: 'Fried egg +€1', price: 1 },
+                { id: 'jalapeno', label: 'Jalapeños +€0.50', price: 0.5 },
               ]},
             ],
           },
@@ -577,8 +577,8 @@ export const restaurants = [
             modifiers: [
               { id: 'protein', name: 'Add protein (optional)', required: false, options: [
                 { id: 'none', label: 'No protein', price: 0 },
-                { id: 'falafel', label: 'Falafel +£2', price: 2 },
-                { id: 'chicken', label: 'Grilled chicken +£3', price: 3 },
+                { id: 'falafel', label: 'Falafel +€2', price: 2 },
+                { id: 'chicken', label: 'Grilled chicken +€3', price: 3 },
               ]},
             ],
           },

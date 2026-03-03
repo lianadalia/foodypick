@@ -109,7 +109,7 @@ export default function Profile() {
                         <span className="text-xs text-gray-400">{order.rating}</span>
                       </div>
                     )}
-                    <span className="text-xs font-semibold text-[#FF6B35]">£{order.total?.toFixed(2)}</span>
+                    <span className="text-xs font-semibold text-[#FF6B35]">€{order.total?.toFixed(2)}</span>
                   </div>
                 </div>
                 <div className="shrink-0">

@@ -44,7 +44,7 @@ export default function RestaurantCard({ restaurant }) {
           </div>
           <div className="flex items-center gap-1 text-xs text-gray-500">
             <ShoppingBag size={12} />
-            <span>{deliveryFee === 0 ? 'Free' : `£${deliveryFee.toFixed(2)}`} delivery</span>
+            <span>{deliveryFee === 0 ? 'Free' : `€${deliveryFee.toFixed(2)}`} delivery</span>
           </div>
           <span className="text-xs text-gray-400">~{serviceFeePct}% service</span>
         </div>

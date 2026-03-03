@@ -75,7 +75,7 @@ export default function ItemDetail() {
             {item.dietaryTags.map((tag) => <DietaryBadge key={tag} tag={tag} />)}
           </div>
           <p className="text-sm text-gray-500 mt-2 leading-relaxed">{item.description}</p>
-          <p className="text-lg font-bold text-[#FF6B35] mt-2">£{item.price.toFixed(2)}</p>
+          <p className="text-lg font-bold text-[#FF6B35] mt-2">€{item.price.toFixed(2)}</p>
         </div>
 
         {/* Modifiers */}
@@ -109,7 +109,7 @@ export default function ItemDetail() {
                       </div>
                       <span className="text-sm text-gray-800">{opt.label}</span>
                     </div>
-                    {opt.price > 0 && <span className="text-sm text-gray-500">+£{opt.price.toFixed(2)}</span>}
+                    {opt.price > 0 && <span className="text-sm text-gray-500">+€{opt.price.toFixed(2)}</span>}
                   </button>
                 );
               })}
@@ -136,7 +136,7 @@ export default function ItemDetail() {
               <Plus size={16} className="text-[#FF6B35]" />
             </button>
           </div>
-          <p className="text-sm text-gray-400">{quantity} × £{unitPrice.toFixed(2)}</p>
+          <p className="text-sm text-gray-400">{quantity} × €{unitPrice.toFixed(2)}</p>
         </div>
         <button
           onClick={handleAdd}
@@ -144,7 +144,7 @@ export default function ItemDetail() {
         >
           <ShoppingCart size={18} />
           <span>Add to Cart</span>
-          <span>£{total.toFixed(2)}</span>
+          <span>€{total.toFixed(2)}</span>
         </button>
       </div>
     </div>

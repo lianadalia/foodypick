@@ -124,7 +124,7 @@ export default function Checkout() {
                   tip === t ? 'border-[#FF6B35] bg-[#FFE8DC] text-[#FF6B35]' : 'border-gray-200 text-gray-600'
                 }`}
               >
-                {t === 0 ? 'None' : `£${t}`}
+                {t === 0 ? 'None' : `€${t}`}
               </button>
             ))}
           </div>
@@ -133,17 +133,17 @@ export default function Checkout() {
         {/* Summary */}
         <div className="bg-white rounded-2xl p-4 space-y-2">
           {[
-            { label: 'Subtotal', val: `£${subtotal.toFixed(2)}` },
-            { label: 'Delivery', val: deliveryFee === 0 ? 'Free' : `£${deliveryFee.toFixed(2)}` },
-            { label: `Service fee (${serviceFeePct}%)`, val: `£${serviceFee.toFixed(2)}` },
-            ...(tip > 0 ? [{ label: 'Rider tip', val: `£${tip.toFixed(2)}` }] : []),
+            { label: 'Subtotal', val: `€${subtotal.toFixed(2)}` },
+            { label: 'Delivery', val: deliveryFee === 0 ? 'Free' : `€${deliveryFee.toFixed(2)}` },
+            { label: `Service fee (${serviceFeePct}%)`, val: `€${serviceFee.toFixed(2)}` },
+            ...(tip > 0 ? [{ label: 'Rider tip', val: `€${tip.toFixed(2)}` }] : []),
           ].map(({ label, val }) => (
             <div key={label} className="flex justify-between text-sm text-gray-600">
               <span>{label}</span><span>{val}</span>
             </div>
           ))}
           <div className="border-t border-gray-100 pt-2 flex justify-between font-bold text-gray-900">
-            <span>Total</span><span>£{total.toFixed(2)}</span>
+            <span>Total</span><span>€{total.toFixed(2)}</span>
           </div>
         </div>
 
@@ -152,7 +152,7 @@ export default function Checkout() {
           disabled={placing}
           className="w-full bg-[#FF6B35] text-white font-bold text-base py-4 rounded-2xl active:scale-95 transition-transform disabled:opacity-60"
         >
-          {placing ? 'Placing order...' : `Place Order · £${total.toFixed(2)}`}
+          {placing ? 'Placing order...' : `Place Order · €${total.toFixed(2)}`}
         </button>
       </div>
     </div>

@@ -76,7 +76,7 @@ export default function Cart() {
                 {entry.selectedModifiers?.length > 0 && (
                   <p className="text-xs text-gray-400 mt-0.5">{entry.selectedModifiers.map((m) => m.label).join(', ')}</p>
                 )}
-                <p className="text-sm font-bold text-[#FF6B35] mt-1">£{(unitPrice * entry.quantity).toFixed(2)}</p>
+                <p className="text-sm font-bold text-[#FF6B35] mt-1">€{(unitPrice * entry.quantity).toFixed(2)}</p>
               </div>
               <div className="flex flex-col items-end gap-2">
                 <button onClick={() => removeItem(entry.key)} className="text-gray-300 hover:text-red-400">
@@ -130,7 +130,7 @@ export default function Cart() {
           </div>
           {promoError && <p className="text-red-500 text-xs mt-1.5">{promoError}</p>}
           {appliedPromo && <p className="text-green-600 text-xs mt-1.5 font-medium">Code "{appliedPromo.code}" applied!</p>}
-          <p className="text-xs text-gray-400 mt-2">Try: FOODYPICK10 (10% off) or WELCOME5 (£5 off)</p>
+          <p className="text-xs text-gray-400 mt-2">Try: FOODYPICK10 (10% off) or WELCOME5 (€5 off)</p>
         </div>
       </div>
 
@@ -142,7 +142,7 @@ export default function Cart() {
       {belowMin && (
         <div className="px-4 pb-4">
           <p className="text-amber-700 bg-amber-50 text-xs px-3 py-2.5 rounded-xl text-center">
-            Minimum order is £{restaurant.minOrder}. Add £{(restaurant.minOrder - subtotal).toFixed(2)} more.
+            Minimum order is €{restaurant.minOrder}. Add €{(restaurant.minOrder - subtotal).toFixed(2)} more.
           </p>
         </div>
       )}

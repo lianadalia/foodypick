@@ -14,7 +14,7 @@ export default function MenuItemCard({ item, restaurantId }) {
             <span className="text-xs text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded">Unavailable</span>
           </div>
           <p className="text-xs text-gray-400 mt-0.5 line-clamp-2">{item.description}</p>
-          <span className="text-sm font-semibold text-gray-400 mt-1 block">£{item.price.toFixed(2)}</span>
+          <span className="text-sm font-semibold text-gray-400 mt-1 block">€{item.price.toFixed(2)}</span>
         </div>
         {item.image && (
           <img src={item.image} alt={item.name} className="w-20 h-20 object-cover rounded-xl shrink-0 grayscale" loading="lazy" />
@@ -39,7 +39,7 @@ export default function MenuItemCard({ item, restaurantId }) {
           ))}
         </div>
         <p className="text-xs text-gray-500 mt-1 line-clamp-2">{item.description}</p>
-        <span className="text-sm font-semibold text-[#FF6B35] mt-1.5 block">£{item.price.toFixed(2)}</span>
+        <span className="text-sm font-semibold text-[#FF6B35] mt-1.5 block">€{item.price.toFixed(2)}</span>
       </div>
 
       <div className="relative shrink-0">
