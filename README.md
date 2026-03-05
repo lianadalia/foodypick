@@ -6,8 +6,7 @@ AI-assisted functional UI prototype for a food delivery app, built as a UX resea
 
 ### Figma mockups: 
 
--https://www.figma.com/design/uuczNWhUku9aQ0AtnJKEI0/foodypick-%E2%80%94-UI-Prototype?node-id=0-1&t=JsejInWzEm6QwfDS-1
----
+https://www.figma.com/design/uuczNWhUku9aQ0AtnJKEI0/foodypick-%E2%80%94-UI-Prototype?node-id=0-1&t=JsejInWzEm6QwfDS-1
 
 ## Overview
 
