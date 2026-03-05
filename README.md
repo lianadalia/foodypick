@@ -1,6 +1,6 @@
 # foodypick
 
-A functional UI prototype for a food delivery app, built as a UX research artefact for discussion with product and engineering teams. Covers the full order journey from splash screen to live order tracking across 10 screens.
+AI-assisted functional UI prototype for a food delivery app, built as a UX research artefact for discussion with product and engineering teams . Covers the full order journey from splash screen to live order tracking across 10 screens.
 
 **Live demo:** https://lianadalia.github.io/foodypick/
 
