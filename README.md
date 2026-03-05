@@ -3,7 +3,7 @@
 AI-assisted functional UI prototype for a food delivery app, built as a UX research artefact for discussion with product and engineering teams . Covers the full order journey from splash screen to live order tracking across 10 screens.
 
 **Live demo:** https://lianadalia.github.io/foodypick/
-
+Figma mockups: https://www.figma.com/design/uuczNWhUku9aQ0AtnJKEI0/foodypick-%E2%80%94-UI-Prototype?node-id=0-1&t=JsejInWzEm6QwfDS-1
 ---
 
 ## Overview
